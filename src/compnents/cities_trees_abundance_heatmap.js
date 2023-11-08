@@ -3,7 +3,7 @@ import abundance_data from "../core/data/top20_cities_top20trees.json"
 import * as d3 from "d3"
 
 
-const margin = {top: 0, right: 50, bottom: 200, left: 50}
+const margin = {top: 0, right: 50, bottom: 200, left: 200}
 var x_labels
 var y_labels
 
@@ -18,7 +18,7 @@ export default function CitiesTreesAbundanceHeatmap(props){
 
     useEffect(()=>{
 // append the svg object to the body of the page
-    var svg = d3.select("#heatmap_vis")
+    var svg = d3.select("#heatmap_vis #inner")
     
 
 
@@ -39,7 +39,6 @@ export default function CitiesTreesAbundanceHeatmap(props){
 var y = d3.scaleBand()
 .range([ boundsHeight, 0 ])
 .domain(myVars)
-.padding(0.05);
 svg.append("g")
 .style("font-size", 15)
 
@@ -67,7 +66,7 @@ var myColor = d3.scaleSequential()
 .domain([0,max_abundance])
 
 // create a tooltip
-var tooltip = d3.select("#heatmap_vis")
+var tooltip = d3.select("#tooltip")
 .append("div")
 .style("opacity", 0)
 .attr("class", "tooltip")
@@ -153,7 +152,6 @@ y_labels = myVars.map((group, i) => {
         opacity={0.8}
         x={x_pos}
         y={y_pos}
-        transform={"rotate(-90," + x_pos+ "," + y_pos+ ")"}
         fontWeight="bold"
         >
             {group}
@@ -184,21 +182,24 @@ setUpdate()
                 </div>
             </div>
             <div className="row">
-                <div className="col-md-12 text-center">
+                <div className="col-md-12 text-center" id="tooltip">
                     <svg width={width} height={height} id="heatmap_vis">
-                        <g
+                        <g id="inner"
                             width={boundsWidth}
                             height={boundsHeight}
                             transform={`translate(${[margin.left, margin.top].join(",")})`}
                         >
-                        </g>
-                        <g>
+                            <g>
                             {x_labels}
                         </g>
                         <g>
                             {y_labels}
                         </g>
+                        </g>
+                        
+                        
                     </svg>
+                    
                 </div>
             </div>
             <hr></hr>

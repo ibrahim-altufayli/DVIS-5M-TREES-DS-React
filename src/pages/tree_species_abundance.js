@@ -27,6 +27,6 @@ export default function TreeSpeciesAbundance() {
         <TreeAbundanceByCityChart width="1200" height="600"></TreeAbundanceByCityChart>
         <CitiesAbundanceOverAll width="1200" height="600"></CitiesAbundanceOverAll>
         <CitiesAbundancePercentageOverAll width="1200" height="600"></CitiesAbundancePercentageOverAll>
-        <CitiesTreesAbundanceHeatmap width="1200" height="800"></CitiesTreesAbundanceHeatmap>
+        <CitiesTreesAbundanceHeatmap width="1300" height="800"></CitiesTreesAbundanceHeatmap>
     </>)
 }
