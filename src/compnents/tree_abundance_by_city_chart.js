@@ -5,7 +5,7 @@ import states_cities from '../core/data/states_cities.json'
 import abundance_data from '../core/data/top_10_trees_abundance_by_state_city.json'
 
 
-const MARGIN = { top: 50, right: 50, bottom: 50, left: 50 };
+const MARGIN = { top: 10, right: 50, bottom: 50, left: 50 };
 const BAR_PADDING = 0.3;
 var allShapes
 var grid
@@ -222,14 +222,17 @@ export default function TreeAbundanceByCityChart(props) {
 
     return (
         <>
-            <div className="row">
+            <div className="row text-center">
                 <div className="col-md-12 text-center">
                     <h2>
-                        Tree Species Abundance
+                        Tree Species Abundance In a selected City
                     </h2>
+                    <h4>
+                    Select a state, pick a city, and uncover the dominant 10 trees shaping the greenery
+                    </h4>
                 </div>
             </div>
-            <div className="row m-3">
+            <div className="row justify-content-center">
                 <div className="col-md-3">
                     <CFormSelect
                         value={selectedState}
@@ -272,7 +275,7 @@ export default function TreeAbundanceByCityChart(props) {
                 </div>
             </div>
 
-
+                        <hr></hr>
         </>
     )
 

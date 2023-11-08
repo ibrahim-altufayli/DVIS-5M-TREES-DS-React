@@ -166,6 +166,14 @@ export default function CitiesAbundancePercentageOverAll(props) {
         
     ) 
     return (
+        <>
+        <div className="row">
+                <div className="col-md-12 text-center">
+                    <h2>
+                        Tree Species Abundance In a Specific City
+                    </h2>
+                </div>
+            </div>
         <div className="row">
             <div className="col-md-12 text-center">
             <svg width={width} height={height}>
@@ -183,5 +191,7 @@ export default function CitiesAbundancePercentageOverAll(props) {
             </svg>
             </div>
         </div>
+        <hr></hr>
+        </>
     );
 };
