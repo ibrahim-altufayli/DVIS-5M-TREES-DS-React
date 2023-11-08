@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/DVIS-5M-TREES-DS-React/static/css/main.af8b5aff.css",
-    "main.js": "/DVIS-5M-TREES-DS-React/static/js/main.c643be8b.js",
+    "main.js": "/DVIS-5M-TREES-DS-React/static/js/main.2994b7fa.js",
     "static/js/787.3a95e628.chunk.js": "/DVIS-5M-TREES-DS-React/static/js/787.3a95e628.chunk.js",
+    "static/media/dataset-cover.jpeg": "/DVIS-5M-TREES-DS-React/static/media/dataset-cover.345324bf785692f883a0.jpeg",
     "index.html": "/DVIS-5M-TREES-DS-React/index.html",
     "main.af8b5aff.css.map": "/DVIS-5M-TREES-DS-React/static/css/main.af8b5aff.css.map",
-    "main.c643be8b.js.map": "/DVIS-5M-TREES-DS-React/static/js/main.c643be8b.js.map",
+    "main.2994b7fa.js.map": "/DVIS-5M-TREES-DS-React/static/js/main.2994b7fa.js.map",
     "787.3a95e628.chunk.js.map": "/DVIS-5M-TREES-DS-React/static/js/787.3a95e628.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.af8b5aff.css",
-    "static/js/main.c643be8b.js"
+    "static/js/main.2994b7fa.js"
   ]
 }

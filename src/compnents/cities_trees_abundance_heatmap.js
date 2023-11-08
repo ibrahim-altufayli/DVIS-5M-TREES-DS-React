@@ -172,11 +172,15 @@ setUpdate()
 
         return (
             <>
-            <div className="row">
+            <div className="row m-3">
                 <div className="col-md-12 text-center">
                     <h2>
-                        Tree Species Abundance In a Specific City
+                        A Heatmap of Tree Abundance 
                     </h2>
+                    <h4>
+                        Top 20 Abundant Trees across Top 20 Greenest Cities in the US
+                    </h4>
+                    
                 </div>
             </div>
             <div className="row">
