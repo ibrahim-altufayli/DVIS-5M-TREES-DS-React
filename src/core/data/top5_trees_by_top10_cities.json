@@ -1,0 +1,246 @@
+{
+    "cities": [
+        "new york",
+        "los angeles",
+        "denver",
+        "portland",
+        "san diego",
+        "houston",
+        "san francisco",
+        "washington dc",
+        "seattle",
+        "columbus"
+    ],
+    "trees": [
+        "platanus acerifolia",
+        "lagerstroemia indica",
+        "acer platanoides",
+        "gleditsia triacanthos",
+        "pyrus calleryana",
+        "others"
+    ],
+    "columbus": {
+        "pyrus calleryana": [
+            9245,
+            6.827312202758988
+        ],
+        "gleditsia triacanthos": [
+            7090,
+            5.235872743922252
+        ],
+        "acer platanoides": [
+            4549,
+            3.359377307771837
+        ],
+        "platanus acerifolia": [
+            3916,
+            2.891915044456917
+        ],
+        "others": [
+            110612,
+            81.68552270109001
+        ]
+    },
+    "denver": {
+        "gleditsia triacanthos": [
+            23565,
+            8.318595317017378
+        ],
+        "acer platanoides": [
+            7945,
+            2.8046356797667333
+        ],
+        "pyrus calleryana": [
+            7133,
+            2.517994500160618
+        ],
+        "platanus acerifolia": [
+            1814,
+            0.6403535711890315
+        ],
+        "others": [
+            242824,
+            85.71842093186623
+        ]
+    },
+    "houston": {
+        "lagerstroemia indica": [
+            44320,
+            20.92678458443901
+        ],
+        "pyrus calleryana": [
+            2622,
+            1.2380421746479937
+        ],
+        "gleditsia triacanthos": [
+            69,
+            0.03258005722757878
+        ],
+        "others": [
+            164775,
+            77.80259318368542
+        ]
+    },
+    "los angeles": {
+        "lagerstroemia indica": [
+            34729,
+            6.05446209096773
+        ],
+        "platanus acerifolia": [
+            17477,
+            3.046843674273461
+        ],
+        "pyrus calleryana": [
+            7500,
+            1.307508585973048
+        ],
+        "gleditsia triacanthos": [
+            456,
+            0.07949652202716131
+        ],
+        "acer platanoides": [
+            6,
+            0.0010460068687784382
+        ],
+        "others": [
+            513442,
+            89.51064311988982
+        ]
+    },
+    "new york": {
+        "platanus acerifolia": [
+            87014,
+            13.342247178262076
+        ],
+        "gleditsia triacanthos": [
+            64264,
+            9.853887565952997
+        ],
+        "pyrus calleryana": [
+            58931,
+            9.036154739032368
+        ],
+        "acer platanoides": [
+            40112,
+            6.150553000832606
+        ],
+        "others": [
+            401848,
+            61.61715751591995
+        ]
+    },
+    "portland": {
+        "acer platanoides": [
+            19209,
+            8.862242850090658
+        ],
+        "gleditsia triacanthos": [
+            1412,
+            0.6514387476874386
+        ],
+        "lagerstroemia indica": [
+            852,
+            0.39307777126749127
+        ],
+        "others": [
+            195278,
+            90.09324063095441
+        ]
+    },
+    "san diego": {
+        "lagerstroemia indica": [
+            2207,
+            1.0399585335972104
+        ],
+        "pyrus calleryana": [
+            1986,
+            0.9358213175007069
+        ],
+        "platanus acerifolia": [
+            1907,
+            0.8985957968146264
+        ],
+        "others": [
+            206120,
+            97.12562435208746
+        ]
+    },
+    "san francisco": {
+        "platanus acerifolia": [
+            11925,
+            6.874228991088002
+        ],
+        "pyrus calleryana": [
+            4036,
+            2.326573434635738
+        ],
+        "gleditsia triacanthos": [
+            117,
+            0.06744526557293888
+        ],
+        "lagerstroemia indica": [
+            102,
+            0.05879843665333133
+        ],
+        "acer platanoides": [
+            2,
+            0.0011529105226143399
+        ],
+        "others": [
+            157292,
+            90.67180096152737
+        ]
+    },
+    "seattle": {
+        "acer platanoides": [
+            6304,
+            3.822853435049696
+        ],
+        "pyrus calleryana": [
+            4467,
+            2.708865211669891
+        ],
+        "platanus acerifolia": [
+            1769,
+            1.072751860184472
+        ],
+        "gleditsia triacanthos": [
+            1404,
+            0.851409616562464
+        ],
+        "lagerstroemia indica": [
+            406,
+            0.24620534496037064
+        ],
+        "others": [
+            150553,
+            91.29791453157311
+        ]
+    },
+    "washington dc": {
+        "platanus acerifolia": [
+            5745,
+            3.4223114452340817
+        ],
+        "lagerstroemia indica": [
+            4324,
+            2.5758180485974185
+        ],
+        "acer platanoides": [
+            3403,
+            2.0271759526773856
+        ],
+        "gleditsia triacanthos": [
+            1911,
+            1.1383876713389607
+        ],
+        "pyrus calleryana": [
+            952,
+            0.567108876564464
+        ],
+        "others": [
+            151534,
+            90.2691980055877
+        ]
+    }
+}

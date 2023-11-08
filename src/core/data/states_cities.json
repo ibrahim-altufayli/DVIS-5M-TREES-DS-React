@@ -1,0 +1,179 @@
+{
+    "arizona": [
+        "phoenix"
+    ],
+    "california": [
+        "irvine",
+        "san francisco",
+        "anaheim",
+        "sacramento",
+        "los angeles",
+        "santa rosa",
+        "huntington beach",
+        "san diego",
+        "fresno",
+        "ontario",
+        "garden grove",
+        "stockton",
+        "rancho cucamonga"
+    ],
+    "colorado": [
+        "colorado springs",
+        "denver",
+        "aurora"
+    ],
+    "district of columbia": [
+        "washington dc"
+    ],
+    "florida": [
+        "miami",
+        "tampa",
+        "seffner",
+        "none",
+        "temple terrace",
+        "lutz",
+        "cape coral",
+        "orlando"
+    ],
+    "hawaii": [
+        "kailua",
+        "honolulu",
+        "kaneohe",
+        "waipahu",
+        "ahuimanu",
+        "heeia",
+        "aiea"
+    ],
+    "iowa": [
+        "de soto",
+        "newton",
+        "baxter",
+        "dexter",
+        "van meter",
+        "bayard",
+        "earlham",
+        "mitchellville",
+        "panora",
+        "stuart",
+        "milo",
+        "adair",
+        "hartford",
+        "carlisle",
+        "monroe",
+        "prairie city",
+        "colfax",
+        "dallas center",
+        "guthrie center",
+        "polk city",
+        "waukee",
+        "runnells",
+        "elkhart",
+        "granger",
+        "pleasant hill",
+        "oakland acres",
+        "kellogg",
+        "woodward",
+        "bouton",
+        "union",
+        "des moines",
+        "redfield",
+        "windsor heights",
+        "sully",
+        "adel",
+        "bondurant",
+        "coon rapids"
+    ],
+    "kansas": [
+        "overland park"
+    ],
+    "kentucky": [
+        "louisville"
+    ],
+    "louisiana": [
+        "new orleans"
+    ],
+    "maryland": [
+        "baltimore"
+    ],
+    "massachusetts": [
+        "boston"
+    ],
+    "michigan": [
+        "grand rapids",
+        "detroit"
+    ],
+    "missouri": [
+        "st louis"
+    ],
+    "nevada": [
+        "las vegas"
+    ],
+    "new mexico": [
+        "albuquerque"
+    ],
+    "new york": [
+        "new york",
+        "buffalo",
+        "rochester"
+    ],
+    "north carolina": [
+        "durham",
+        "greensboro"
+    ],
+    "ohio": [
+        "columbus"
+    ],
+    "oklahoma": [
+        "oklahoma city"
+    ],
+    "oregon": [
+        "portland"
+    ],
+    "pennsylvania": [
+        "pittsburgh"
+    ],
+    "south dakota": [
+        "sioux falls"
+    ],
+    "tennessee": [
+        "knoxville",
+        "nashville"
+    ],
+    "texas": [
+        "dallas",
+        "plano",
+        "austin",
+        "houston"
+    ],
+    "virginia": [
+        "richmond"
+    ],
+    "washington": [
+        "seattle"
+    ],
+    "wisconsin": [
+        "cedarburg",
+        "west bend",
+        "milwaukee",
+        "glendale",
+        "brown deer",
+        "hales corners",
+        "greenfield",
+        "greendale",
+        "cudahy",
+        "west allis",
+        "wauwatosa",
+        "fox point",
+        "oak creek",
+        "shorewood",
+        "franklin",
+        "west milwaukee",
+        "south milwaukee",
+        "whitefish bay",
+        "new berlin",
+        "muskego",
+        "wind lake",
+        "watertown",
+        "madison"
+    ]
+}
