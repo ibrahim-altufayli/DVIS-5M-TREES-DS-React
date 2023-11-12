@@ -1,8 +1,8 @@
 import { CImage } from '@coreui/react'
-import TreeAbundanceByCityChart from "../compnents/tree_abundance_by_city_chart";
-import CitiesAbundanceOverAll from "../compnents/cities_abundance_overall"
-import CitiesAbundancePercentageOverAll from "../compnents/cities_abundance_percentage_overall"
-import CitiesTreesAbundanceHeatmap from "../compnents/cities_trees_abundance_heatmap"
+import TreeAbundanceByCityChart from "../components/tree_abundance_by_city_chart";
+import CitiesAbundanceOverAll from "../components/cities_abundance_overall"
+import CitiesAbundancePercentageOverAll from "../components/cities_abundance_percentage_overall"
+import CitiesTreesAbundanceHeatmap from "../components/cities_trees_abundance_heatmap"
 import image from "../core/images/dataset-cover.jpeg"
 
 export default function TreeSpeciesAbundance() {
