@@ -11,7 +11,7 @@ export default function Footer(){
                     <CLink href="https://corsi.unige.it/en/off.f/2023/ins/63416">DATA VISUALIZATION UNIGE</CLink>
                 </div>
                 <div>
-                    <span>Hussain Mattok(5475768)</span>
+                    <span>Hussein Maatouk(5626766)</span>
                 </div>
                 <div>
                     <span>

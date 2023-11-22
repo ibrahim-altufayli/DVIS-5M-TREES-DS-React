@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/DVIS-5M-TREES-DS-React/static/css/main.af8b5aff.css",
-    "main.js": "/DVIS-5M-TREES-DS-React/static/js/main.fd852ab0.js",
+    "main.js": "/DVIS-5M-TREES-DS-React/static/js/main.be3d4937.js",
     "static/js/787.3a95e628.chunk.js": "/DVIS-5M-TREES-DS-React/static/js/787.3a95e628.chunk.js",
     "static/media/slide2.jpeg": "/DVIS-5M-TREES-DS-React/static/media/slide2.e0ac68dddf863ebdb231.jpeg",
     "static/media/slide1.jpeg": "/DVIS-5M-TREES-DS-React/static/media/slide1.10a8dc18f47d4bbc65cb.jpeg",
     "static/media/slide3.jpeg": "/DVIS-5M-TREES-DS-React/static/media/slide3.8acc1e2b4be4da92b0e1.jpeg",
     "index.html": "/DVIS-5M-TREES-DS-React/index.html",
     "main.af8b5aff.css.map": "/DVIS-5M-TREES-DS-React/static/css/main.af8b5aff.css.map",
-    "main.fd852ab0.js.map": "/DVIS-5M-TREES-DS-React/static/js/main.fd852ab0.js.map",
+    "main.be3d4937.js.map": "/DVIS-5M-TREES-DS-React/static/js/main.be3d4937.js.map",
     "787.3a95e628.chunk.js.map": "/DVIS-5M-TREES-DS-React/static/js/787.3a95e628.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.af8b5aff.css",
-    "static/js/main.fd852ab0.js"
+    "static/js/main.be3d4937.js"
   ]
 }
