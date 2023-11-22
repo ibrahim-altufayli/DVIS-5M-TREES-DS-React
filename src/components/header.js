@@ -15,20 +15,20 @@ return (
             </CNavItem>
 
             <CNavItem>
-              <CNavLink href="/first-assignment">
+              <CNavLink href="/DVIS-5M-TREES-DS-React/first-assignment">
                 First Assignment
               </CNavLink>
             </CNavItem>
 
             <CNavItem>
-              <CNavLink href="/second-assignment">
+              <CNavLink href="/DVIS-5M-TREES-DS-React/second-assignment">
                 Second Assignment
               </CNavLink>
             </CNavItem>
 
 
             <CNavItem>
-              <CNavLink href="/third-assignment" disabled>
+              <CNavLink href="/DVIS-5M-TREES-DS-React/third-assignment" disabled>
                 Third Assignment
               </CNavLink>
             </CNavItem>

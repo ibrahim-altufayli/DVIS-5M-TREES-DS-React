@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route,HashRouter } from "react-router-dom";
 import '@coreui/coreui/dist/css/coreui.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css';
@@ -14,13 +14,13 @@ import Assignment2 from './pages/assignment2'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+   
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<App />}>
+            <Route path="/DVIS-5M-TREES-DS-React" element={<App />}>
                 <Route index element={<Home />} />
                 <Route path="first-assignment" element={<TreeSpeciesAbundance />} />
                 <Route path="second-assignment" element={<Assignment2 />} />
-
             </Route>
         </Routes>
     </BrowserRouter>
