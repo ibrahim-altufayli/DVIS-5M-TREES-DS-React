@@ -10,6 +10,8 @@ import Home from './pages/home'
 import TreeSpeciesAbundance from './pages/tree_species_abundance';
 import Assignment2 from './pages/assignment2'
 
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>

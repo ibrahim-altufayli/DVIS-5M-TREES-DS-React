@@ -1,11 +1,17 @@
-import React, { useEffect, useState } from "react"
+import React from "react";
+import Header from "../components/header"
+import Footer from "../components/footer"
 
 export default function Assignment2() {
 
+
     return (
         <>
-        <p>hii</p>
-            <iframe src="file:///Users/ibrahemaltufaily/Desktop/DSE-Gen/DVIS/5m-trees-ds-dvis-react/src/core/js/sankey.html"></iframe>
+        <Header></Header>
+            <div>
+                <iframe title="Static HTML" src={process.env.PUBLIC_URL + "/sankey/sankey.html"} width="100%" height="1200" />
+            </div>
+        <Footer></Footer>
         </>
     )
 }

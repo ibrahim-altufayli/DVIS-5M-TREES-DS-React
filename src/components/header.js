@@ -21,7 +21,7 @@ return (
             </CNavItem>
 
             <CNavItem>
-              <CNavLink href="/secound-assignment">
+              <CNavLink href="/second-assignment">
                 Second Assignment
               </CNavLink>
             </CNavItem>
