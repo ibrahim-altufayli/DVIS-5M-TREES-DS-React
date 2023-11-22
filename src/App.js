@@ -1,9 +1,16 @@
 import './App.css';
-import TreeSpeciesAbundance from './pages/tree_species_abundance';
+import { CFooter, CLink } from '@coreui/react'
+import { Outlet } from "react-router-dom";
+import Footer from "./components/footer"
 
 function App() {
   return (
-    <TreeSpeciesAbundance></TreeSpeciesAbundance>
+    <>
+
+      <Outlet />
+      <Footer/>
+     
+    </>
   );
 }
 
