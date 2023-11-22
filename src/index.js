@@ -15,7 +15,7 @@ import Assignment2 from './pages/assignment2'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    
-    <BrowserRouter>
+    <HashRouter>
         <Routes>
             <Route path="/DVIS-5M-TREES-DS-React" element={<App />}>
                 <Route index element={<Home />} />
@@ -23,7 +23,7 @@ root.render(
                 <Route path="second-assignment" element={<Assignment2 />} />
             </Route>
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
