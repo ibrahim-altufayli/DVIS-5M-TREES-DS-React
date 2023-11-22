@@ -1,28 +1,35 @@
 import {CHeader, CContainer, CHeaderBrand, CHeaderNav, CNavItem, CNavLink} from "@coreui/react"
+import { Link } from "react-router-dom";
 export default function Header(){
 
 return (
     <>
     <CHeader style={{"margin-bottom": 20}}>
       <CContainer fluid>
-        <CHeaderBrand href="/">DATA VISUALIZATION</CHeaderBrand>
+        <CHeaderBrand>DATA VISUALIZATION</CHeaderBrand>
           <CHeaderNav>
 
             <CNavItem>
-              <CNavLink href="/" active>
+            <CNavLink>
+              <Link href="/" active>
                 Home
+              </Link>
               </CNavLink>
             </CNavItem>
 
             <CNavItem>
-              <CNavLink href="/first-assignment">
+            <CNavLink>
+              <Link to="/first-assignment">
                 First Assignment
+              </Link>
               </CNavLink>
             </CNavItem>
 
             <CNavItem>
-              <CNavLink href="/second-assignment">
+            <CNavLink>
+              <Link to="/second-assignment">
                 Second Assignment
+              </Link>
               </CNavLink>
             </CNavItem>
 
