@@ -11,7 +11,7 @@ return (
 
             <CNavItem>
             <CNavLink>
-              <Link href="/" active>
+              <Link to="/" active>
                 Home
               </Link>
               </CNavLink>
