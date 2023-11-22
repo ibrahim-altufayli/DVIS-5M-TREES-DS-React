@@ -8,11 +8,11 @@ import { useNavigate } from "react-router-dom";
 function Home() {
     const navigate = useNavigate(); 
     const first_assigment = () => { 
-        navigate("/DVIS-5M-TREES-DS-React/first-assignment"); 
+        navigate("/first-assignment"); 
     } 
 
     const second_assigment = () => { 
-        navigate("/DVIS-5M-TREES-DS-React/second-assignment"); 
+        navigate("/second-assignment"); 
     }
 
   return (

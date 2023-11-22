@@ -17,7 +17,7 @@ root.render(
    
     <HashRouter>
         <Routes>
-            <Route path="/DVIS-5M-TREES-DS-React" element={<App />}>
+            <Route path="/" element={<App />}>
                 <Route index element={<Home />} />
                 <Route path="first-assignment" element={<TreeSpeciesAbundance />} />
                 <Route path="second-assignment" element={<Assignment2 />} />

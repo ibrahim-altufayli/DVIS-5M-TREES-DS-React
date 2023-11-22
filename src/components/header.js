@@ -9,26 +9,26 @@ return (
           <CHeaderNav>
 
             <CNavItem>
-              <CNavLink href="/DVIS-5M-TREES-DS-React" active>
+              <CNavLink href="/" active>
                 Home
               </CNavLink>
             </CNavItem>
 
             <CNavItem>
-              <CNavLink href="/DVIS-5M-TREES-DS-React/first-assignment">
+              <CNavLink href="/first-assignment">
                 First Assignment
               </CNavLink>
             </CNavItem>
 
             <CNavItem>
-              <CNavLink href="/DVIS-5M-TREES-DS-React/second-assignment">
+              <CNavLink href="/second-assignment">
                 Second Assignment
               </CNavLink>
             </CNavItem>
 
 
             <CNavItem>
-              <CNavLink href="/DVIS-5M-TREES-DS-React/third-assignment" disabled>
+              <CNavLink href="/third-assignment" disabled>
                 Third Assignment
               </CNavLink>
             </CNavItem>
