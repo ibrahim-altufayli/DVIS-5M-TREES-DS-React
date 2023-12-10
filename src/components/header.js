@@ -1,50 +1,52 @@
-import {CHeader, CContainer, CHeaderBrand, CHeaderNav, CNavItem, CNavLink} from "@coreui/react"
+import { CHeader, CContainer, CHeaderBrand, CHeaderNav, CNavItem, CNavLink } from "@coreui/react"
 import { Link } from "react-router-dom";
-export default function Header(){
+export default function Header() {
 
-return (
+  return (
     <>
-    <CHeader style={{"margin-bottom": 20}}>
-      <CContainer fluid>
-        <CHeaderBrand>DATA VISUALIZATION</CHeaderBrand>
+      <CHeader style={{ "margin-bottom": 20 }}>
+        <CContainer fluid>
+          <CHeaderBrand>DATA VISUALIZATION</CHeaderBrand>
           <CHeaderNav>
 
             <CNavItem>
-            <CNavLink>
-              <Link to="/" active>
-                Home
-              </Link>
+              <CNavLink>
+                <Link to="/">
+                  Home
+                </Link>
               </CNavLink>
             </CNavItem>
 
             <CNavItem>
-            <CNavLink>
-              <Link to="/first-assignment">
-                First Assignment
-              </Link>
+              <CNavLink>
+                <Link to="/first-assignment">
+                  First Assignment
+                </Link>
               </CNavLink>
             </CNavItem>
 
             <CNavItem>
-            <CNavLink>
-              <Link to="/second-assignment">
-                Second Assignment
-              </Link>
+              <CNavLink>
+                <Link to="/second-assignment">
+                  Second Assignment
+                </Link>
               </CNavLink>
             </CNavItem>
 
 
             <CNavItem>
-              <CNavLink href="/third-assignment" disabled>
-                Third Assignment
+              <CNavLink>
+                <Link to="/third-assignment">
+                  Third Assignment
+                </Link>
               </CNavLink>
             </CNavItem>
 
 
           </CHeaderNav>
-      </CContainer>
-    </CHeader>
+        </CContainer>
+      </CHeader>
     </>
-)
+  )
 
 }

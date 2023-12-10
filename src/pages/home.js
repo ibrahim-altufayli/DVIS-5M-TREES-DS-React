@@ -15,6 +15,11 @@ function Home() {
         navigate("/second-assignment"); 
     }
 
+    const third_assigment = () => { 
+      navigate("/third-assignment"); 
+  }
+    
+
   return (
     <>
       <CCarousel controls indicators >
@@ -54,7 +59,7 @@ function Home() {
         </div>
 
         <div className='col-md-4 d-flex justify-content-center' id="assignment3">
-          <CButton color="warning" size="lg" style={{ 'width': '80%' }} shape="rounded-0" disabled>
+          <CButton color="warning" size="lg" style={{ 'width': '80%' }} shape="rounded-0" onClick={third_assigment}>
             Third Assignment
           </CButton>
         </div>
