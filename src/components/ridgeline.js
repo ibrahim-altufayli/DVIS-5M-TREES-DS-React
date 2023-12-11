@@ -3,7 +3,7 @@ import * as d3 from "d3";
 import data from "../core/data/ridgeline_data.json"
 import { CFormSelect } from '@coreui/react'
 
-var margin = { top: 60, right: 30, bottom: 20, left: 110 },
+var margin = { top: 100, right: 30, bottom: 20, left: 110 },
     width = 1200 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
 
@@ -66,7 +66,7 @@ export default function Ridgeline() {
             console.log(min_temp, max_temp)
             // Add X axis
             var x = d3.scaleLinear()
-                .domain([min_temp, max_temp])
+                .domain([min_temp-10, max_temp+10])
                 .range([0, width]);
             svg.append("g")
                 .attr("transform", "translate(0," + height + ")")
@@ -74,16 +74,17 @@ export default function Ridgeline() {
 
             // Create a Y scale for densities
             var y = d3.scaleLinear()
-                .domain([0, 1])
+                .domain([0, 0.4])
                 .range([height, 0]);
 
             // Create the Y axis for names
-            var yName = d3.scaleBand()
+            var yName = d3.scalePoint()
                 .domain(categories)
                 .range([0, height])
-                .paddingInner(0)
             svg.append("g")
                 .call(d3.axisLeft(yName));
+
+            console.log(yName("2023"))
 
 
             var kde = kernelDensityEstimator(kernelEpanechnikov(7), x.ticks(40)) // increase this 40 for more accurate density.
@@ -102,8 +103,47 @@ export default function Ridgeline() {
                 .append("path")
                 .attr("transform", function (d) { return ("translate(0," + (yName(d.key) - height) + ")") })
                 .datum(function (d) { return (d.density_min) })
-                .attr("fill", "#69b3a2")
+                .attr("fill", "#ADD8E6")
                 .attr("stroke", "#000")
+                .attr("opacity", 0.5)
+                .attr("stroke-width", 1)
+                .attr("d", d3.line()
+                    .curve(d3.curveBasis)
+                    .x(function (d) { return x(d[0]); })
+                    .y(function (d) { return y(d[1]); })
+                )
+
+            d3.select("#ridgeline_svg").append("svg").attr("id", "colors").attr("width", 50).attr("height", 100).append('rect')
+            .attr('x', 0)
+            .attr('y', 0)
+            .attr('width', 50)
+            .attr('height', 50)
+            .attr("fill", "#ADD8E6")
+            .attr("opacity", 0.5)
+
+            d3.select("#colors").append("text").attr('x', 50/2)
+            .attr('y', 50/2)
+            .attr("textAnchor", "central")
+            .attr("alignmentBaseline", "central")  
+            .text("min")
+
+            d3.select("#colors").append('rect')
+            .attr('x', 0)
+            .attr('y', 50)
+            .attr('width', 50)
+            .attr('height', 50)
+            .attr("fill", "#FF6F61")
+            .attr("opacity", 0.5)
+
+                svg.selectAll("areas")
+                .data(allDensity)
+                .enter()
+                .append("path")
+                .attr("transform", function (d) { return ("translate(0," + (yName(d.key) - height) + ")") })
+                .datum(function (d) { return (d.density_max) })
+                .attr("fill", "#FF6F61")
+                .attr("stroke", "#000")
+                .attr("opacity", 0.5)
                 .attr("stroke-width", 1)
                 .attr("d", d3.line()
                     .curve(d3.curveBasis)
