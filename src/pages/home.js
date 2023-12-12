@@ -16,7 +16,7 @@ function Home() {
     }
 
     const third_assigment = () => { 
-      navigate("/third-assignment"); 
+      navigate("/third-assignment/line-chart"); 
   }
     
 

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import * as d3 from "d3";
 import data from "../core/data/ridgeline_data.json"
 import { CFormSelect } from '@coreui/react'
+import Header from "../components/header"
+
 
 var margin = { top: 100, right: 30, bottom: 20, left: 110 },
     width = 1200 - margin.left - margin.right,
@@ -122,10 +124,9 @@ export default function Ridgeline() {
             .attr("opacity", 0.5)
 
             d3.select("#colors").append("text").attr('x', 50/2)
-            .attr('y', 50/2)
-            .attr("textAnchor", "central")
-            .attr("alignmentBaseline", "central")  
-            .text("min")
+            .attr('y', 63/2)
+            .attr('x', 10)
+            .text("MIN")
 
             d3.select("#colors").append('rect')
             .attr('x', 0)
@@ -134,6 +135,11 @@ export default function Ridgeline() {
             .attr('height', 50)
             .attr("fill", "#FF6F61")
             .attr("opacity", 0.5)
+
+            d3.select("#colors").append("text")
+            .attr('y', 80)
+            .attr('x', 10)
+            .text("MAX")
 
                 svg.selectAll("areas")
                 .data(allDensity)
@@ -170,7 +176,7 @@ export default function Ridgeline() {
                     />
                 </div>
             </div>
-            <div id="ridgeline_svg"></div>
+            <div id="ridgeline_svg" style={{"height": "700px"}}></div>
 
         </>
     )

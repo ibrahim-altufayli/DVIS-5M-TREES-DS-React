@@ -1,0 +1,197 @@
+body {
+	font-family: sans-serif;
+	font-size: 14px;
+	background-color: #37373D;
+	cursor: default;
+}
+
+#show {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	color: aliceblue;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin-bottom: 50px;
+	font-size: 0.6cm;
+  }
+  #infotb{
+    display: none;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: aliceblue;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+    font-size: 0.5cm;
+  }
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.level-line {
+	stroke: #5F5F64;
+}
+
+.level-value {
+	fill: #5F5F64;
+}
+
+.axis-line {
+	stroke: #5F5F64;
+}
+
+.axis-name {
+	fill: #fff;
+}
+
+.value {
+	fill: #fff;
+}
+
+.legend-item-text {
+	fill: #5F5F64;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+:root {
+  --base-spacing-unit: 24px;
+  --half-spacing-unit: var(--base-spacing-unit) / 2;
+  --color-alpha: #1772FF;
+  --color-form-highlight: #EEEEEE;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: var(--base-spacing-unit);
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.containers {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  display: none;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  margin-top: 4cm;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid var(--color-form-highlight);
+}
+
+.table-header {
+  display: flex;
+  width: 100%;
+  background: #000;
+  padding: calc(var(--half-spacing-unit) * 1.7) 0;
+}
+
+.table-row {
+  display: flex;
+  width: 100%;
+  padding: calc(var(--half-spacing-unit) * 1.5) 0;
+
+  &:nth-of-type(odd) {
+    background: var(--color-form-highlight);
+  }
+}
+
+.table-data,
+.header__item {
+  flex: 1 1 20%;
+  text-align: center;
+}
+
+.header__item {
+  text-transform: uppercase;
+}
+
+.filter__link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-left: var(--base-spacing-unit);
+  padding-right: var(--base-spacing-unit);
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: calc(-1 * var(--half-spacing-unit) * 1.9);
+    color: white;
+    font-size: var(--half-spacing-unit);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &.desc::after {
+    content: '(desc)';
+  }
+
+  &.asc::after {
+    content: '(asc)';
+  }
+}
+
+/*css for the button*/
+.butt {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 10px;
+  font-size: 1rem;
+  text-align: center;
+  margin-left: 6cm;
+  margin-top: -10%;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(98, 98, 243);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.butt:hover {
+  background-color: rgb(0, 60, 255);
+}
+.ShowCheckBoxes{
+  display: block !important;
+}
+.butt:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+#selectButton {
+  position: absolute;
+    left: 1cm;
+    width: 5cm;
+    font-weight: bolder;
+    border:#000;
+    
+  }

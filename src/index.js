@@ -10,6 +10,9 @@ import Home from './pages/home'
 import TreeSpeciesAbundance from './pages/tree_species_abundance';
 import Assignment2 from './pages/assignment2'
 import Assignment3 from './pages/assignment3';
+import Linechart from './pages/line-chart';
+import RadarChart from './pages/radar-chart';
+import Ridgeline from './pages/ridgeline';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,7 +24,11 @@ root.render(
                 <Route index element={<Home />} />
                 <Route path="first-assignment" element={<TreeSpeciesAbundance />} />
                 <Route path="second-assignment" element={<Assignment2 />} />
-                <Route path="third-assignment" element={<Assignment3 />} />
+                <Route path="third-assignment" element={<Assignment3 />}>
+                    <Route index path="line-chart" element={<Linechart />} />
+                    <Route path="radar-chart" element={<RadarChart />} />
+                    <Route path="ridgeline-chart" element={<Ridgeline />} />
+                </Route>
                 
             </Route>
         </Routes>

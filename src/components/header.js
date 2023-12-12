@@ -8,7 +8,6 @@ export default function Header() {
         <CContainer fluid>
           <CHeaderBrand>DATA VISUALIZATION</CHeaderBrand>
           <CHeaderNav>
-
             <CNavItem>
               <CNavLink>
                 <Link to="/">
@@ -36,13 +35,11 @@ export default function Header() {
 
             <CNavItem>
               <CNavLink>
-                <Link to="/third-assignment">
+                <Link to="/third-assignment/line-chart">
                   Third Assignment
                 </Link>
               </CNavLink>
             </CNavItem>
-
-
           </CHeaderNav>
         </CContainer>
       </CHeader>
