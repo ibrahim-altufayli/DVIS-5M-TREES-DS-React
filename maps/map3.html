@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fork of D3 World Map</title>
+    <style>
+    path {
+        stroke: black;
+        stroke-width: 0.5px;
+        fill: black;
+    }
+    h1.title {
+        text-align: center;
+    }
+    div#tooltip {
+      position: absolute;
+      text-align: center;
+      width: 60px;
+      min-height: 28px;
+      padding: 8px 12px;
+      font: 12px sans-serif;
+      background: lightgray;
+      border: 0px;
+      border-radius: 8px;
+      pointer-events: none;
+    }
+    
+    .state:hover {
+        stroke: black;
+        stroke-width: 3;
+        cursor: pointer;
+    }
+    
+    </style>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+</head>
+<body>
+<h1 class = 'title'>Trees Intensity across US states</h1>
+
+<script type="text/javascript">
+        const width = 1100;
+        const height = 600;
+        const svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height);
+        
+        const projection = d3.geoAlbersUsa()
+            .translate([(width / 2)+200, height / 2]) // translate to center of screen
+            .scale([1000]); 
+const colorScale = d3.scaleLinear()
+    .domain([0,1462259])
+    .range(['white', 'blue']);
+const diversity = {'California': 1462259,
+ 'New York': 772242,
+ 'Colorado': 353808,
+ 'Texas': 246732,
+ 'Oregon': 216751,
+ 'District Of Columbia': 167869,
+ 'Washington': 164903,
+ 'Ohio': 135412,
+ 'Florida': 121894,
+ 'Maryland': 120183,
+ 'Wisconsin': 115824,
+ 'Louisiana': 104072,
+ 'Michigan': 90077,
+ 'Missouri': 83452,
+ 'South Dakota': 61304,
+ 'Kansas': 44767,
+ 'Pennsylvania': 40154,
+ 'Kentucky': 32711,
+ 'Nevada': 31864,
+ 'North Carolina': 22593,
+ 'Iowa': 15805,
+ 'Hawaii': 14667,
+ 'Tennessee': 10411,
+ 'Oklahoma': 8871,
+ 'New exico': 2474,
+ 'Virginia': 1815,
+ 'Massachusetts': 1333,
+ 'Arizona': 212};
+const path = d3.geoPath().projection(projection);
+d3.select('body').append('div').attr('id', 'tooltip').attr('style', 'position: absolute; opacity: 0;');
+d3.json("https://gist.githubusercontent.com/Bradleykingz/3aa5206b6819a3c38b5d73cb814ed470/raw/a476b9098ba0244718b496697c5b350460d32f99/us-states.json", function(error, uState) {
+if (error) throw error;
+    svg.selectAll('path')
+        .data(uState.features)
+        .enter()
+        .append('path')
+        .attr("d", path)
+        .style('fill', (d, i) => {
+    const stateName = uState.features[i].properties["name"];
+    const diversityValue = diversity[stateName];
+
+    // Check if diversityValue is defined
+    if (diversityValue !== undefined) {
+        return colorScale(diversityValue);
+    } else {
+        
+        return 'gray'; 
+    }
+})
+        .attr('class', 'state')
+        .on('mouseover', function(event, d) {
+    const stateName = uState.features[d].properties["name"];
+    const diversityValue = diversity[stateName];
+
+    
+    if (diversityValue !== undefined) {
+        var target = document.getElementById("tooltip");
+        const prefix = "./State_Diversity_histogram/";
+        const filetype = ".png";
+        let temp = prefix.concat(stateName);
+        let filename = temp.concat(filetype);
+
+        
+        d3.select('#plot').remove();
+
+        
+        const boxPlot = d3.select('body').append("div")
+            .attr('id', 'box-plot')
+            .style('position', 'absolute')
+            .style('left', (d3.event.pageX + 20) + 'px')
+            .style('top', (d3.event.pageY - 100) + 'px')
+            .style('width', '100px') 
+            .style('height', '75px') 
+            .style('background', 'white')
+            .style('border', '1px solid black')
+            .style('padding', '10px')
+            .style('color', 'black');
+
+        
+        const formattedValue = d3.format(".2s")(diversityValue);
+
+        
+        boxPlot.html(`Number of Trees in ${stateName}: ${formattedValue}`);
+    } else {
+        
+        var target = document.getElementById("tooltip");
+       
+        d3.select('#plot').remove();
+
+        
+        const boxPlot = d3.select('body').append("div")
+            .attr('id', 'box-plot')
+            .style('position', 'absolute')
+            .style('left', (d3.event.pageX + 20) + 'px')
+            .style('top', (d3.event.pageY - 100) + 'px')
+            .style('width', '100px') 
+            .style('height', '75px') 
+            .style('background', 'white') 
+            .style('border', '1px solid black')
+            .style('padding', '10px')
+            .style('color', 'black') 
+            .html(`Number of Trees in ${stateName}: Unavailable`);
+    }
+})
+.on('mouseout', function() {
+   
+    d3.select('#box-plot').remove();
+});
+
+
+
+    }
+    
+);
+var legendFormat = d3.format(".2s");
+var legend = d3.legendColor()
+    .scale(colorScale)
+    .labelFormat(legendFormat);
+    svg.append("text") 
+    .attr("class", "legend-title")
+    .attr("x", 100) 
+    .attr("y", 180) 
+    .style("font-size", "20px") 
+    .style("font-weight", "bold")
+    .text("Color scale");
+svg.append("g")
+    .attr("class", "legendclass")
+    .attr("transform", "translate(100, 200)")
+    .style("position", "absolute")
+    .style("top","500px")
+    .style("left","1000px")
+    .call(legend)
+    .selectAll('.cell rect') 
+    .style('stroke', 'black');
+</script>
+
+</body>
+</html>
