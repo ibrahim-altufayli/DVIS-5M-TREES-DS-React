@@ -40,7 +40,18 @@ export default function Header() {
                 </Link>
               </CNavLink>
             </CNavItem>
+
+            <CNavItem>
+              <CNavLink>
+                <Link to="/forth-assignment/first-map">
+                  Forth Assignment
+                </Link>
+              </CNavLink>
+            </CNavItem>
+
           </CHeaderNav>
+
+          
         </CContainer>
       </CHeader>
     </>

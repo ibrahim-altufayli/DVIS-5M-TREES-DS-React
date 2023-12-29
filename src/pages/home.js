@@ -18,6 +18,10 @@ function Home() {
     const third_assigment = () => { 
       navigate("/third-assignment/line-chart"); 
   }
+
+  const forth_assigment = () => { 
+    navigate("/forth-assignment/first-map"); 
+}
     
 
   return (
@@ -46,21 +50,27 @@ function Home() {
         </CCarouselItem>
       </CCarousel>
       <div className='row justify-content-center' style={{ 'margin': 30 }}>
-        <div className='col-md-4 d-flex justify-content-center' id="assignment1">
+        <div className='col-md-3 d-flex justify-content-center' id="assignment1">
           <CButton color="success" size="lg" style={{ 'width': '80%' }} shape="rounded-0" onClick={first_assigment}>
             First Assignment
           </CButton>
         </div>
 
-        <div className='col-md-4 d-flex justify-content-center' id="assignment2">
+        <div className='col-md-3 d-flex justify-content-center' id="assignment2">
           <CButton color="danger" size="lg" style={{ 'width': '80%' }} shape="rounded-0" onClick={second_assigment}>
             Second Assignment
           </CButton>
         </div>
 
-        <div className='col-md-4 d-flex justify-content-center' id="assignment3">
+        <div className='col-md-3 d-flex justify-content-center' id="assignment3">
           <CButton color="warning" size="lg" style={{ 'width': '80%' }} shape="rounded-0" onClick={third_assigment}>
             Third Assignment
+          </CButton>
+        </div>
+
+        <div className='col-md-3 d-flex justify-content-center' id="assignment4">
+          <CButton color="info" size="lg" style={{ 'width': '80%' }} shape="rounded-0" onClick={forth_assigment}>
+            Forth Assignment
           </CButton>
         </div>
 

@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+pre {
+  font-size: 7em;
+}
+.marks .states {
+  fill: #e6e8e8;
+}
+.marks .interiors {
+  fill: none;
+  stroke: #C0C0BB;
+}
+/* .marks .states:hover {
+ fill:green;
+} */
+
+Circle {
+ fill: green;
+ opacity: .85;
+
+}

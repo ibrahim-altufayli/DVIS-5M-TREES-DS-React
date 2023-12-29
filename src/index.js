@@ -13,6 +13,10 @@ import Assignment3 from './pages/assignment3';
 import Linechart from './pages/line-chart';
 import RadarChart from './pages/radar-chart';
 import Ridgeline from './pages/ridgeline';
+import Assignment4 from './pages/assignment4';
+import Map1 from './pages/map1';
+import Map2 from './pages/map2';
+import Map3 from './pages/map3';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,6 +32,12 @@ root.render(
                     <Route index path="line-chart" element={<Linechart />} />
                     <Route path="radar-chart" element={<RadarChart />} />
                     <Route path="ridgeline-chart" element={<Ridgeline />} />
+                </Route>
+
+                <Route path="forth-assignment" element={<Assignment4 />}>
+                    <Route index path="first-map" element={<Map1 />} />
+                    <Route path="second-map" element={<Map2 />} />
+                    <Route path="third-map" element={<Map3 />} />
                 </Route>
                 
             </Route>
